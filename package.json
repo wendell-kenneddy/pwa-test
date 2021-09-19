@@ -1,0 +1,24 @@
+{
+  "name": "pwa-test",
+  "version": "1.0.0",
+  "main": "",
+  "license": "MIT",
+  "scripts": {
+    "css": "postcss src/css/main.css -o public/assets/css/main.css",
+    "js": "webpack",
+    "build": "export NODE_ENV=production && yarn run css && yarn run js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.17.3",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "regenerator-runtime": "^0.13.9",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
