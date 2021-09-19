@@ -30,7 +30,6 @@ const limitCacheSize = async (cacheName, size) => {
 const cacheResources = async () => {
   try {
     const cache = await caches.open(staticCacheName);
-    console.log('caching shell assets');
     return cache.addAll(assets);
   } catch (error) {
     console.log(error);
